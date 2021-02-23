@@ -21,7 +21,6 @@ custom: # defines that this can only be triggered manually or by a schedule
     delete-old-branches:
       - step:
           script:
-            - cd tools # Move to the folder in which the script is located
             - chmod +x delete-old-branches.sh # Bitbucket pipelines needs permission to execute this script
             - ./delete-old-branches.sh
 ```
